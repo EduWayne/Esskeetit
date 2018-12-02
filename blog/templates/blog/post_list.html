@@ -1,4 +1,5 @@
 <!DOCTYPE <!DOCTYPE html>
+{% load static %}
 <html>
 <head>
     <meta charset="utf-8" />
@@ -12,6 +13,7 @@
     crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="css/estilos.css" />
     <link href="https://file.myfontastic.com/DtueZxpVJhuAnZwTS5bZ3b/icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
 </head>
 <body>
  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -23,7 +25,7 @@
       <a class="navbar-brand" href="#">Elevator</a>
       <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
         <li class="nav-item active">
-          <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="post_list.html">Inicio <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="sobrenosotros.html">Sobre Nosotros</a>
